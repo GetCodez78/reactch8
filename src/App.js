@@ -90,6 +90,7 @@ class App extends Component {
         });
       }
     }
+    
     this.setState({tasks: tasks});
   }
 
