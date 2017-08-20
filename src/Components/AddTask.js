@@ -11,6 +11,7 @@ class AddTask extends Component {
 
   onSubmit(e){
     this.props.onAddTask(this.state.task);
+    e.target.reset();
     e.preventDefault();
   }
 
