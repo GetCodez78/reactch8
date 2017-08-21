@@ -22,7 +22,7 @@ class App extends Component {
       method:'get',
       url: 'https://api.mlab.com/api/1/databases/mytasklist_zeeli/collections/tasks?apiKey=VQthB7cDuT3pjoMXwMPb0p5wXgR3jL4O'
     }).then((response) => {
-      this.setState({tasks: response.data}, () => {
+      this.setState({tasks: response.data}, () => {  // sets this.state = response.data
         console.log(this.state);
       });
     }).catch((error) => {
