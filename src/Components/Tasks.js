@@ -16,6 +16,7 @@ class Tasks extends Component {
         );
       });
     }
+    // end if statement
     return (
       <Panel>
         {taskItems}
