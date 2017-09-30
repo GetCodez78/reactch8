@@ -17,6 +17,7 @@ class Tasks extends Component {
       });
     }
     // end if statement
+    // on return means next statment will not run
     return (
       <Panel>
         {taskItems}
