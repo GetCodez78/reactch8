@@ -111,7 +111,8 @@ class App extends Component {
         <br />
         <Container>
           <AddTask onAddTask={this.addTask.bind(this)} />
-          <Tasks onEditState={this.editState.bind(this)} tasks={this.state.tasks} />
+          {/* pass args to prop onEditState */}
+          <Tasks onEditState={this.editState.bind(this)} tasks={this.state.tasks} /> 
           <Button color="danger" onClick={this.clearTasks.bind(this)}>Clear Tasks</Button>
         </Container>
       </div>
