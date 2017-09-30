@@ -16,7 +16,7 @@ class Tasks extends Component {
         );
       });
     }
-    // end if statement
+    // end if statement, new comments
     return (
       <Panel>
         {taskItems}
