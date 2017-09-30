@@ -5,7 +5,7 @@ class TaskItem extends Component {
   constructor(props){
     super(props);
     this.state = {
-      task: props.task
+      task: props.task   // task is props.task or their values are equal, not the left is equal the left (this is the confusion)
     }
   }
 
