@@ -10,7 +10,7 @@ class TaskItem extends Component {
   }
 
   onChange(task, e) {
-    this.props.onEditState(task, e.target.checked);
+    this.props.onEditState(task, e.target.checked);  // give arguments to <TaskItem /> ? 
   }
 
   render() {
