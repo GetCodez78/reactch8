@@ -8,15 +8,16 @@ class Footer extends Component {
         }
     }
 
-    onTest() {
+    onTest(txt) {
+        let myStr = txt;
         this.props.onClick(this.state.Zname);  // given to w/e function on <Footer /> 
     }
 
     render() {
         return (
             <div className="mui--divider-bottom">
-                <button onClick={this.onTest.bind(this)}>
-                    Click this
+                <button onClick={this.onTest.bind(this)} >
+                Click IT
                 </button>
             </div>
         );
