@@ -8,14 +8,14 @@ class Footer extends Component {
         }
     }
 
-    onTest(e) {
-        this.props.onClick(e.target.value);
+    onTest() {
+        this.props.onClick(this.state.Zname);
     }
 
     render() {
         return (
             <div className="mui--divider-bottom">
-                <button onClick={this.onTest.bind(this)}>             
+                <button onClick={this.onTest.bind(this)}>
                     Click this
                 </button>
             </div>
