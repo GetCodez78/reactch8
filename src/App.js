@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Appbar, Container, Button } from 'muicss/react';
 import Tasks from './Components/Tasks';
 import AddTask from './Components/AddTask';
+import Footer from './Components/Footer';
 import './App.css';
 
 class App extends Component {
@@ -92,6 +93,11 @@ class App extends Component {
     }
 
     this.setState({ tasks: tasks });
+
+  }
+
+  someFunc(e) {
+      return 'Hello';
   }
 
   render() {
@@ -115,6 +121,7 @@ class App extends Component {
           <Tasks onEditState={this.editState.bind(this)} tasks={this.state.tasks} /> 
           <Button color="danger" onClick={this.clearTasks.bind(this)}>Clear Tasks</Button>
         </Container>
+        <Footer Zname="Test Demo" onClick={this.someFunc.bind(this)}/>
       </div>
     );
   }

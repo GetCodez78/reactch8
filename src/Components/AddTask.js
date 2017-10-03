@@ -21,8 +21,8 @@ class AddTask extends Component {
 
   render() {
     return (
-      <Form onSubmit={this.onSubmit.bind(this)}>
-        <Input hint="Add Task" onChange={this.onChange.bind(this)} />
+      <Form onSubmit={this.onSubmit.bind(this)}>  {/* 2. get task from onAddTask*/}
+        <Input hint="Add Task" onChange={this.onChange.bind(this)} />  {/* 1. set task */}
       </Form>
     );
   }
