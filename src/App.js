@@ -97,7 +97,7 @@ class App extends Component {
   }
 
   someFunc(txt) {
-     txt = 'hello';
+     console.log(txt);
   }
 
   render() {
@@ -118,7 +118,7 @@ class App extends Component {
         <Container>
           <AddTask onAddTask={this.addTask.bind(this)} />
           {/* pass args to prop onEditState */}
-          <Tasks onEditState={this.editState.bind(this)} tasks={this.state.tasks} /> 
+          <Tasks onEditState={this.editState.bind(this)} tasks={this.state.tasks} />
           <Button color="danger" onClick={this.clearTasks.bind(this)}>Clear Tasks</Button>
         </Container>
         <Footer Zname="Test Demo" onClick={this.someFunc.bind(this)}/>
