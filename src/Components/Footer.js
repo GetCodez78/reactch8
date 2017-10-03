@@ -9,16 +9,16 @@ class Footer extends Component {
     }
 
     onTest(e) {
-        this.props.onClick(e.target.Zame);
+        this.props.onClick(e.target.value);
     }
 
     render() {
         return (
             <div className="mui--divider-bottom">
-                <h1>
+                <button>
                     {this.onTest.bind(this)}
                     Click this
-                </h1>
+                </button>
             </div>
         );
     }
