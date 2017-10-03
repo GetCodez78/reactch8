@@ -15,8 +15,7 @@ class Footer extends Component {
     render() {
         return (
             <div className="mui--divider-bottom">
-                <button>
-                    {this.onTest.bind(this)}
+                <button onClick={this.onTest.bind(this)}>             
                     Click this
                 </button>
             </div>

@@ -96,8 +96,8 @@ class App extends Component {
 
   }
 
-  someFunc(e) {
-      this.props.value = 'hello';
+  someFunc(txt) {
+     txt = 'hello';
   }
 
   render() {
