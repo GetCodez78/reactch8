@@ -8,16 +8,16 @@ class Footer extends Component {
         }
     }
 
-    onTest(txt) {
+    onTest(e) {  // pass param e to onClick
         // someFunc's params are given by this onClick
-        this.props.onClick(this.state.Zname, this.props.Xname);  // given to w/e function is <Footer />
+        this.props.onClick(this.state.Zname, this.props.Xname, e.target.name);  // given to w/e function is <Footer />
     }
 
     render() {
         return (
             <div className="mui--divider-bottom">
-                <button onClick={this.onTest.bind(this)} >
-                Click IT
+                <button onClick={this.onTest.bind(this)} name="Click IT" >
+                    Click IT
                 </button>
             </div>
         );
