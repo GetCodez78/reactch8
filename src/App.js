@@ -10,7 +10,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      tasks: []
+      tasks: [],
+      Zname: ''
     }
   }
 
@@ -91,13 +92,15 @@ class App extends Component {
         });
       }
     }
-
     this.setState({ tasks: tasks });
-
   }
 
   someFunc(txt) {
-     console.log(txt);
+    let zname = this.state.Zname;
+    if (zname === '') {
+      this.setState({ Zname: 'This Works!!!' });
+    }
+    console.log(zname);
   }
 
   render() {
@@ -121,7 +124,7 @@ class App extends Component {
           <Tasks onEditState={this.editState.bind(this)} tasks={this.state.tasks} />
           <Button color="danger" onClick={this.clearTasks.bind(this)}>Clear Tasks</Button>
         </Container>
-        <Footer Zname="Test Demo" onClick={this.someFunc.bind(this)}/>
+        <Footer Zname={this.state.Zname} onClick={this.someFunc.bind(this)} />
       </div>
     );
   }
