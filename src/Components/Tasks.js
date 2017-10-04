@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import {Panel} from 'muicss/react';
+import { Panel } from 'muicss/react';
 import TaskItem from './TaskItem';
 
 class Tasks extends Component {
-  handleEditState(task, checked){
+  handleEditState(task, checked) {
     this.props.onEditState(task, checked);  // get arguments from <Task /> 
   }
 
   render() {
     let taskItems;
-    if(this.props.tasks){
+    if (this.props.tasks) {
       taskItems = this.props.tasks.map(task => {
         return (
           //from TaskItem.js this.props.onEditState(task, e.target.checked)

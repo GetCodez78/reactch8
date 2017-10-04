@@ -95,7 +95,7 @@ class App extends Component {
     this.setState({ tasks: tasks });
   }
 
-  someFunc(txt) {
+  someFunc() {
     let zname = this.state.Zname;
     if (zname === '') {
       this.setState({ Zname: 'This Works!!!' });

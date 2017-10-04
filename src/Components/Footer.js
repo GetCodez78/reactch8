@@ -4,11 +4,11 @@ class Footer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            Zname: this.props.Zname  //Test Demo or Zname's value in <Footer /> 
+            Zname: props.Zname  //Test Demo or Zname's value in <Footer /> 
         }
     }
 
-    onTest() {
+    onTest(txt) {
         this.props.onClick(this.state.Zname);  // given to w/e function is <Footer /> 
     }
 
