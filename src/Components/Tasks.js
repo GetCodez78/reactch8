@@ -4,7 +4,7 @@ import TaskItem from './TaskItem';
 
 class Tasks extends Component {
   handleEditState(task, checked) {
-    this.props.onEditState(task, checked);  // get arguments from <Task /> 
+    this.props.onEditState(task, checked);  // get arguments from or send arguments to <Task />? 
   }
 
   render() {

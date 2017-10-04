@@ -9,7 +9,8 @@ class Footer extends Component {
     }
 
     onTest(txt) {
-        this.props.onClick(this.state.Zname);  // given to w/e function is <Footer /> 
+        // someFunc's params are given by this onClick
+        this.props.onClick(this.state.Zname, this.props.Xname);  // given to w/e function is <Footer />
     }
 
     render() {
