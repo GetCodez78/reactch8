@@ -10,7 +10,7 @@ class AddTask extends Component {
   }
 
   onSubmit(e){
-    this.props.onAddTask(this.state.task);
+    this.props.onAddTask(this.state.task);    // pass param to addTask(text) in App.js
     e.target.reset();
     e.preventDefault();
   }
