@@ -95,8 +95,8 @@ class App extends Component {
     this.setState({ tasks: tasks });
   }
 
-  someFunc(txt1, txt2, click, sname) {
-    console.log(txt1 + txt2 + ',' + click + sname);
+  someFunc(txt1, txt2, click, sname, yname) {
+    console.log(`${txt1 + ',' + txt2 + ',' + click + ',' + sname + ',' + yname}`);
   }
 
   render() {
