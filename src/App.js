@@ -95,7 +95,7 @@ class App extends Component {
     this.setState({ tasks: tasks });
   }
 
-  someFunc(txt1, txt2, click, sname, yname) {
+  someFunc(txt1, txt2, click, sname, yname) {  // given by onClick in <Footer/> 
     console.log(`${txt1 + ',' + txt2 + ',' + click + ',' + sname + ',' + yname}`);
   }
 
