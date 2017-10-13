@@ -19,7 +19,7 @@ class Footer extends Component {
     render() {
         return (
             <div className="mui--divider-bottom">
-                {/* this onClick pass the onClink in onText to onClick in <Footer/> */}
+                {/* this onClick pass the onClick in onTest to onClick in <Footer/> */}
                 <button onClick={this.onTest.bind(this, this.state.Sname, this.state.Yname)} name="Click IT" className="btn-default">
                     Click IT
                 </button>
