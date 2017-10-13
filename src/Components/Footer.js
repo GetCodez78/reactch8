@@ -4,19 +4,22 @@ class Footer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            Zname: props.Zname  //Test Demo or Zname's value in <Footer /> 
+            Zname: props.Zname,  //Test Demo or Zname's value in <Footer /> 
+            Sname: 'From the <Footer/>'
         }
     }
 
-    onTest(e) {  // pass param e to onClick
+    onTest(sname, e) {  // pass param e to onClick
         // someFunc's params are given by this onClick
-        this.props.onClick(this.state.Zname, this.props.Xname, e.target.name);  // given to w/e function is <Footer />
+        this.props.onClick(this.state.Zname, this.props.Xname, e.target.name, sname);  // given to w/e function is <Footer />
+        // if sname is itself it must be binded as this.state.Sname
     }
 
     render() {
         return (
             <div className="mui--divider-bottom">
-                <button onClick={this.onTest.bind(this)} name="Click IT" className="btn-default">
+                {/* this onClick pass the onClink in onText to onClick in <Footer/> */}
+                <button onClick={this.onTest.bind(this, this.state.Sname)} name="Click IT" className="btn-default">
                     Click IT
                 </button>
 
