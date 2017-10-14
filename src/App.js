@@ -4,6 +4,7 @@ import { Appbar, Container, Button } from 'muicss/react';
 import Tasks from './Components/Tasks';
 import AddTask from './Components/AddTask';
 import Footer from './Components/Footer';
+import Mongo from './Components/Mongo';
 import './App.css';
 
 class App extends Component {
@@ -119,8 +120,10 @@ class App extends Component {
           {/* pass args to prop onEditState */}
           <Tasks onEditState={this.editState.bind(this)} tasks={this.state.tasks} />
           <Button color="danger" onClick={this.clearTasks.bind(this)}>Clear Tasks</Button>
+          <Mongo tasks={this.state.tasks} />
+          <Footer Zname={this.state.Zname} Xname='From the Footer' onClick={this.someFunc.bind(this)} />
         </Container>
-        <Footer Zname={this.state.Zname} Xname='From the Footer' onClick={this.someFunc.bind(this)} />
+       
       </div>
     );
   }
