@@ -10,10 +10,10 @@ class Mongo extends Component {
   render() {
     let taskItems;
     if (this.props.tasks) {
-      taskItems = this.props.tasks.map(task => {
+      taskItems = this.props.tasks.map(task => {  // map tasks from database
         return (
-          //from TaskItem.js this.props.onEditState(task, e.target.checked)
-          <MongoView onEditState={this.handleEditState.bind(this)} key={task._id.$oid} task={task} />
+          //from MongoView.js this.props.onEditState(task, e.target.checked)
+          <MongoView onEditState={this.handleEditState.bind(this)} key={task._id.$oid} task={task} />  
         );
       });
     }
