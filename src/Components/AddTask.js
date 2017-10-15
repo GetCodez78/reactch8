@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
-import {Form, Input} from 'muicss/react';
+import { Form, Input } from 'muicss/react';
 
 class AddTask extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       task: ''
     }
   }
 
-  onSubmit(e){
+  onSubmit(e) {
     this.props.onAddTask(this.state.task);    // pass param to addTask(text) in App.js
     e.target.reset();
     e.preventDefault();
   }
 
-  onChange(e){
-    this.setState({task:e.target.value});
+  onChange(e) {
+    this.setState({ task: e.target.value });
   }
 
   render() {
